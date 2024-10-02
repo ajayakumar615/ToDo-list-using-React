@@ -59,7 +59,7 @@ ol {
     padding-left: 0;
 }
 
-.item-container{
+.item-container {
     font-size: 18px;
     color: #333;
     margin: 10px 0;
@@ -70,7 +70,19 @@ ol {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: transform 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.item-container:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.item-list-wrapper {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 10px;
+    scrollbar-width: none;
 }
 
 .dltbtn {
@@ -104,8 +116,6 @@ ol {
     background-color: #ff5e3a;
 }
 
-
-
 .updtbtn {
     display: inline-block;
     width: 100%;
@@ -138,7 +148,7 @@ ol {
     background-color: #1111b9;
 }
 
-.btndiv{
+.btndiv {
     display: flex;
     gap: 10px;
 }

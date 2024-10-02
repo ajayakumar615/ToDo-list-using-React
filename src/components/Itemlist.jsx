@@ -106,6 +106,7 @@ function Itemlist() {
       {items.length === 0 ? (
         <p>No items are there in the list</p>
       ) : (
+        <div className="item-list-wrapper">
         <ol>
           {items.map((i, index) => (
             <li key={index} className="item-container">
@@ -121,6 +122,7 @@ function Itemlist() {
             // </div>
           ))}
         </ol>
+        </div>
       )}
       {items.length > 0 && (
         <button className="clearbtn" onClick={clearAll}>Clear All</button>
